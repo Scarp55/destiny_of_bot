@@ -76,14 +76,14 @@ public class Main {
             replyKeyboardMarkup.setOneTimeKeyboard(false);
 
             // Create a list of keyboard rows
-            List keyboard = new ArrayList<>();
+            List<KeyboardRow> keyboard = new ArrayList<>();
             // First keyboard row
             KeyboardRow keyboardFirstRow = new KeyboardRow();
 
             // Add buttons to the first keyboard row
             keyboardFirstRow.add(new KeyboardButton("Хочу узнать твоё мнение!"));
 
-            // Add all of the keyboard rows to the list
+            // Add all the keyboard rows to the list
             keyboard.add(keyboardFirstRow);
             // and assign this list to our keyboard
             replyKeyboardMarkup.setKeyboard(keyboard);
